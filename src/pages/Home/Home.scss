@@ -1,0 +1,196 @@
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.containers {
+  position: absolute;
+  top: -40%;
+  left: -55%;
+  margin: -50px 0 0 -50px;
+  width: 200%;
+  height: 200%;
+  display: flex;
+  transform: rotate(-25deg);
+}
+.container {
+  width: 100%;
+  position: relative;
+}
+.left {
+  float: left;
+  border-right: 5px solid white;
+  animation: appear 2s linear;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .line {
+    height: 2%;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    p {
+      font-family: 'Chakra Petch', sans-serif;
+      padding-right: 2%;
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+  .line:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    p {
+      color: rgba(51, 51, 51, 0.5);
+    }
+  }
+}
+.right {
+  float: right;
+  background-color: rgba(255, 255, 255, 0.5);
+  h1 {
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    padding-left: 1.5%;
+    top: 35%;
+    font-size: 12rem;
+    color: white;
+    border-bottom: 2px solid white;
+    line-height: 10rem;
+    animation: headingAppear 3s;
+  }
+  .bios {
+    position: absolute;
+    left: 2%;
+    top: 43%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    animation: bioAppear 4s linear;
+    p {
+      text-align: left;
+      font-size: 2.4rem;
+      color: rgba(51, 51, 51, 0.7);
+      span {
+        font-size: 4.2rem;
+        color: white;
+      }
+    }
+  }
+  #flip {
+    height: 12rem;
+    overflow: hidden;
+    position: absolute;
+    top: 60%;
+    left: 2%;
+    animation: bioAppear 4s linear;
+  }
+
+  #flip > div > div {
+    color: #fff;
+    font-size: 6.8rem;
+    height: 10rem;
+    margin-bottom: 10rem;
+    display: inline-block;
+  }
+
+  #flip div:first-child {
+    animation: show 5s linear infinite;
+  }
+
+  #flip div div {
+    padding: 0 2rem;
+    background: #42c58a;
+  }
+  #flip div:first-child div {
+    background: #4ec7f3;
+    padding: 0 2rem;
+  }
+  #flip div:last-child div {
+    background: #dc143c;
+    padding: 0 2rem;
+  }
+}
+
+@keyframes appear {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  100% {
+    height: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes headingAppear {
+  0% {
+    left: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    transform: scale(0.8);
+  }
+  80% {
+    left: 0%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    transform: scale(0.8);
+  }
+  90% {
+    left: 0%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    transform: scale(1.05);
+  }
+  100% {
+    left: 0%;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    transform: scale(1);
+  }
+}
+
+@keyframes bioAppear {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  90% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  95% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes show {
+  0% {
+    margin-top: -30rem;
+  }
+  5% {
+    margin-top: -20rem;
+  }
+  33% {
+    margin-top: -20rem;
+  }
+  38% {
+    margin-top: -10rem;
+  }
+  66% {
+    margin-top: -10rem;
+  }
+  71% {
+    margin-top: 0;
+  }
+  99% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -30rem;
+  }
+}

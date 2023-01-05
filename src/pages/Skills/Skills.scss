@@ -1,0 +1,96 @@
+.skills_container {
+  position: relative;
+  max-width: 114rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 0;
+  margin: 0 auto;
+}
+.skill_container h1 {
+  width: 100%;
+  text-align: center;
+  padding: 30px;
+  font-size: 45px;
+}
+.skills {
+  margin: 0 auto;
+  gap: 20px;
+  width: 50%;
+  flex: 1;
+  min-width: 600px;
+  .skill-box {
+    width: 100%;
+    margin: 30px auto;
+  }
+  .skill-box .title {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .skill-box .skill-bar {
+    height: 20px;
+    width: 80%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+
+  .skill-box .skill-per {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-left: 10px;
+    width: 98%;
+    border-radius: 6px;
+    background: white;
+    animation: progress 1.5s ease-in-out forwards;
+    opacity: 100%;
+  }
+
+  .skill-per.front-end {
+    width: 95%;
+    animation-delay: 0.5s;
+  }
+  .skill-per.back-end {
+    width: 75%;
+    animation-delay: 0.7s;
+  }
+  .skill-per.uiux {
+    width: 70%;
+    animation-delay: 0.9s;
+  }
+  .skill-per.graphic-design {
+    width: 60%;
+    animation-delay: 1s;
+  }
+  .skill-per .percent {
+    position: absolute;
+    right: -14px;
+    top: -30px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: crimson;
+    z-index: 1;
+  }
+}
+
+@keyframes progress {
+  0% {
+    width: 0;
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

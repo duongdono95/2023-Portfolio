@@ -1,0 +1,46 @@
+@import 'normalize.css';
+
+:root {
+  --primary: #fd2155;
+  --secondary: #05fdd8;
+  --black: #000;
+  --white: #fff;
+  --box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  --tex-color: rgb(57, 57, 57);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow: hidden;
+}
+
+body {
+  background-color: #70b8de;
+  font-family: 'Monoton', cursive;
+  font-family: 'Blinker', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-rendering: optimizespeed;
+  overflow-y: overlay;
+  color: var(--tex-color);
+  overflow: hidden;
+}
+
+// Scrollbar CSS
+button,
+input,
+[tabindex] {
+  outline: none;
+  border: none;
+}
+
+a {
+  color: var(--tex-color);
+  text-decoration: none;
+}
