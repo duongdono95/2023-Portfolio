@@ -1,13 +1,18 @@
 import React from 'react';
 
-import Contact from '../pages/Contact/Contact';
 import Home from '../pages/Home/Home';
-import Skills from '../pages/Skills/Skills';
-import Works from '../pages/Works/Works';
-import About from '../pages/About/About';
+import Category from '../pages/Category/Layout';
+
+import Contact from '../pages/Category/Categories/Contact/Contact';
+import Skills from '../pages/Category/Categories/Skills/Skills';
+import Works from '../pages/Category/Categories/Works/Works';
+import About from '../pages/Category/Categories/About/About';
 
 export const routes = [
   { path: '/', component: Home },
+  { path: '/Category/*', component: Category },
+];
+export const contents = [
   { path: '/About', component: About },
   { path: '/Skills', component: Skills },
   { path: '/Works', component: Works },

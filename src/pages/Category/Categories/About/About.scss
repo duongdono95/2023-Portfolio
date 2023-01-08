@@ -1,0 +1,20 @@
+.about {
+  float: right;
+  max-width: 70rem;
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  justify-content: center;
+  h1 {
+    text-align: right;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    color: white;
+  }
+  p {
+    margin: 2rem 0 5rem 0;
+  }
+  a {
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
+}

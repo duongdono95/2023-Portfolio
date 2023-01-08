@@ -1,12 +1,17 @@
 import React from 'react';
-import './Clouds.scss';
-import Sun from './sun/Sun';
+import './Cloud.scss';
+import Sun from '../sun/Sun';
+import Thunder from '../Thunder/Thunder';
+import Rain from '../Rain/Rain';
+import Snow from '../Snow/Snow';
+import Rainbow from '../Rainbow/Rainbow';
 const Cloud = (props) => {
-  const { sun, scale } = props;
+  const { currentWeather, scale } = props;
   return (
     <div className="weather" style={{ transform: `scale(${scale})` }}>
       <div className="icon">
-        {sun == true && <Sun />}
+        {currentWeather == 'rainbow' && <Rainbow />}
+        {currentWeather == 'sun' && <Sun />}
         <div className="icon__cloud">
           <div className="icon__cloud-reflect icon__cloud-reflect--1"></div>
           <div className="icon__cloud-reflect icon__cloud-reflect--2"></div>
@@ -28,8 +33,15 @@ const Cloud = (props) => {
             </clipPath>
           </svg>
         </div>
+        {currentWeather == 'thunder' && <Rain />}
         <div className="icon__cloud-shadow"></div>
       </div>
+      {currentWeather == 'thunder' && (
+        <div className="thunder" style={{ transform: `scale(${scale * 2})` }}>
+          <Thunder />
+        </div>
+      )}
+      {currentWeather == 'snow' && <Snow />}
     </div>
   );
 };
