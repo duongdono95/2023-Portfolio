@@ -2,9 +2,9 @@
   position: relative;
   overflow: hidden;
   width: 50rem;
-  height: 50rem;
+  height: 60rem;
   transition: 0.3s ease-in-out;
-  transform: scale(0.7);
+  cursor: pointer;
 }
 .icon {
   min-width: 45rem;
@@ -24,7 +24,6 @@
     box-shadow: inset 1rem 0rem 5rem rgb(255, 255, 255), inset 2rem 2rem 10rem #ffffff,
       inset 0rem -1.5rem 1rem 0.1rem #ffffff;
     z-index: 1;
-
     .icon__cloud-reflect {
       position: absolute;
       top: 0rem;
@@ -62,6 +61,9 @@
       filter: blur(4px);
     }
   }
+  // .icon__cloud:hover {
+  //   box-shadow: 0 0 2rem rgb(250, 0, 0);
+  // }
   .icon__cloud-shadow {
     position: absolute;
     top: 30rem;
@@ -88,58 +90,13 @@
     transform: scale(1.2);
   }
 }
-// @keyframes snow {
-//   0% {
-//     transform: translateY(-12rem) rotate(45deg);
-//   }
-//   50%,
-//   100% {
-//     transform: translateY(12rem) rotate(45deg);
-//   }
-// }
 
-// @keyframes thunder {
-//   0%,
-//   25%,
-//   75%,
-//   100% {
-//     filter: drop-shadow(0px -1px 0px #cfb8e5) drop-shadow(0px 0px 0px #9a4ee7)
-//       drop-shadow(0px 0px 0px rgba(#9a4ee7, 30%)) drop-shadow(-2px -2px 1px #3c3762) drop-shadow(4px 1px 1px #3c3762);
-//   }
-//   50% {
-//     filter: drop-shadow(0px -1px 0px #cfb8e5) drop-shadow(0px 0px 3px #9a4ee7)
-//       drop-shadow(0px 0px 30px rgba(#9a4ee7, 30%)) drop-shadow(-2px -2px 1px #3c3762) drop-shadow(4px 1px 1px #3c3762);
-//   }
-// }
-
-// @keyframes floating {
-//   0%,
-//   100% {
-//     transform: translatey(0);
-//   }
-//   50% {
-//     transform: translatey(1rem);
-//   }
-// }
-
-// @keyframes pulse {
-//   0%,
-//   100% {
-//     transform: scale(1);
-//   }
-//   50% {
-//     transform: scale(0.9);
-//   }
-// }
-
-// @keyframes neon {
-//   0%,
-//   40%,
-//   60%,
-//   100% {
-//     filter: brightness(1);
-//   }
-//   50% {
-//     filter: brightness(0.9);
-//   }
-// }
+@keyframes floating {
+  0%,
+  100% {
+    transform: translatey(0);
+  }
+  50% {
+    transform: translatey(1rem);
+  }
+}

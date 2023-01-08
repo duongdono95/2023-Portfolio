@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import CloudsSun from '../../components/Clouds/Cloud';
 import './Home.scss';
 import TypeWriter2 from '../../Hook/TypeWriter2';
 import TypeWriter from '../../Hook/TypeWriter';

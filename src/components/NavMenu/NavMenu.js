@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './NavMenu.scss';
 
-const logo = require('../assets/logo.svg').default;
+const logo = require('../../assets/logo.svg').default;
 
 const NavMenu = () => {
   return (
@@ -14,16 +14,16 @@ const NavMenu = () => {
       </div>
       {/* --------------------------------- */}
       <ul className="menu__list">
-        <NavLink to="About">
+        <NavLink to="Category/About">
           <li className="page__link">About</li>
         </NavLink>
-        <NavLink to="Skills">
+        <NavLink to="Category/Skills">
           <li className="page__link">My Skills</li>
         </NavLink>
-        <NavLink to="Projects">
+        <NavLink to="Category/Work">
           <li className="page__link">Work</li>
         </NavLink>
-        <NavLink to="Contact">
+        <NavLink to="Category/Contact">
           <li className="page__link">Contact</li>
         </NavLink>
       </ul>
