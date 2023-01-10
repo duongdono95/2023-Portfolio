@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React from 'react';
 import ProjectCard from './ProjectCard';
 import uiux1 from '../../../../assets/uiux1.png';
@@ -11,11 +12,11 @@ import web3 from '../../../../assets/web3.png';
 
 import './Projects.scss';
 const Projects = () => {
-  const html = <i class="fa-brands fa-html5"></i>
-  const css = <i class="fa-brands fa-css3-alt"></i>
-  const js = <i class="fa-brands fa-square-js"></i>
-  const vuejs = <i class="fa-brands fa-vuejs"></i>
-  const react = <i class="fa-brands fa-react"></i>
+  const html = <i className="fa-brands fa-html5"></i>
+  const css = <i className="fa-brands fa-css3-alt"></i>
+  const js = <i className="fa-brands fa-square-js"></i>
+  const vuejs = <i className="fa-brands fa-vuejs"></i>
+  const react = <i className="fa-brands fa-react"></i>
   const typescript = <p>TS</p>
   const mongodb = <span>MongoDB</span>
   const postman = <span>Postman</span>
@@ -81,8 +82,8 @@ const Projects = () => {
       </p>
       <div className="projects">
         {webDesignProjects.map((project, index) => {
-          const { title, description, imgUrl, link, programmes } = project;
-          return <ProjectCard key={index} programmes={programmes} title={title} description={description} imgUrl={imgUrl} link={link} />;
+          const { title, description, imgUrl, processDeck, github, site, programmes } = project;
+          return <ProjectCard key={index} processDeck={processDeck} site={site} github={github} programmes={programmes} title={title} description={description} imgUrl={imgUrl} />;
         })}
       </div>
     </div>
