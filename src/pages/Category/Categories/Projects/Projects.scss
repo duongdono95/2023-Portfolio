@@ -1,0 +1,61 @@
+.projects_container {
+  width: 100%;
+  .projects__container__header {
+    width: 95%;
+    text-align: right;
+    font-size: 3.2rem;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    margin: 0 auto;
+    color: white;
+  }
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .project__card {
+    width: 45%;
+    min-width: 20rem;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 3%;
+    margin: 5% auto;
+    border-radius: 1.5rem;
+    box-shadow: inset -1.3rem 1.3rem 1rem -1rem #fff, inset 1.3rem -0.3rem 1rem -0.5rem #0000002d;
+  }
+  .project__card::after {
+    width: 50px;
+    height: 100px;
+    background-color: white;
+    box-shadow: 1px 1px 0 5rem black;
+  }
+  .main__details {
+    .title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: white;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+      margin-bottom: 2%;
+    }
+    img {
+      width: 100%;
+      border-radius: 1.5rem;
+      box-shadow: 2px 2px 1rem rgba(0, 0, 0, 0.3);
+    }
+    .programmes {
+      height: 3.2rem;
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 5%;
+      flex-wrap: wrap;
+      font-size: 2rem;
+      span {
+        border: 1px solid white;
+        padding: 0 3%;
+        border-radius: 1rem;
+      }
+    }
+  }
+}

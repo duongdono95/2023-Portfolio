@@ -4,7 +4,8 @@ import './NavMenu.scss';
 
 const logo = require('../../assets/logo.svg').default;
 
-const NavMenu = () => {
+const NavMenu = (props) => {
+  const { handleClick } = props
   return (
     <div className="nav__menu">
       <div className="logo__container">
@@ -14,16 +15,16 @@ const NavMenu = () => {
       </div>
       {/* --------------------------------- */}
       <ul className="menu__list">
-        <NavLink to="Category/About">
+        <NavLink onClick={handleClick} to="Category/About">
           <li className="page__link">About</li>
         </NavLink>
-        <NavLink to="Category/Skills">
+        <NavLink onClick={handleClick} to="Category/Skills">
           <li className="page__link">My Skills</li>
         </NavLink>
-        <NavLink to="Category/Work">
-          <li className="page__link">Work</li>
+        <NavLink onClick={handleClick} to="Category/Projects">
+          <li className="page__link">Projects</li>
         </NavLink>
-        <NavLink to="Category/Contact">
+        <NavLink onClick={handleClick} to="Category/Contact">
           <li className="page__link">Contact</li>
         </NavLink>
       </ul>

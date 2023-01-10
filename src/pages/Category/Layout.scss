@@ -1,5 +1,5 @@
 .page__content {
-  padding: 2%;
+  padding: 2% 0;
   width: 100%;
   margin: 0 auto;
   min-height: 100vh;
@@ -14,6 +14,7 @@
   width: 40%;
   height: 50rem;
   margin: 0 auto 5rem auto;
+  flex-grow: 1;
   .big__cloud {
     position: absolute;
     top: 0;
@@ -39,6 +40,8 @@
   min-width: 35rem;
   display: flex;
   margin: 0 auto;
+  flex-grow: 1;
+  padding: 5%;
 }
 @keyframes moving {
   0% {

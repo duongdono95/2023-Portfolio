@@ -44,20 +44,28 @@ const Skills = () => {
         </div>
         <div className="skills__content-item">
           <p align="justify">
-            Beginning my journey as a Student at Yoobee college in 2021, I have got chances to learn and work on
-            different industrial projects from Graphic Design, and Ui-Ux Design to Web/App Development.{' '}
+            Beginning my journey as a Student at Yoobee college in 2021, I got chances to learn and work on
+            different industrial projects from Graphic Design, and Ui-Ux Design to Web/App Development.
           </p>
           <p align="justify">
             Since I started working as a Front-End developer at Aotearoa Energy, I have had opportunities to work with
             different talented people to create Services and website projects for both business and consumer use. The
-            main area of my expertise in most of the projects is front-end development and UX design, HTML, CSS, and JS,
+            main area of my expertise in most of the projects is front-end development and UX/UI design, HTML, CSS, and JS,
             building small and medium web apps, custom plugins, features, animations, and coding/ designing interactive
             layouts. I also have full-stack development experience with popular open-source CMS like WordPress, and
             document databases like MongoDb.
           </p>
           <p align="justify">Visit my GitHub profile for more details or contact me!!</p>
         </div>
-        <ul className="programs"></ul>
+        <ul className="programs">
+          <li><i class="fa-brands fa-html5"></i></li>
+          <li><i class="fa-brands fa-css3"></i></li>
+          <li><i class="fa-brands fa-react"></i></li>
+          <li><i class="fa-brands fa-vuejs"></i></li>
+          <li><p>TS</p></li>
+          <li><i class="fa-brands fa-figma"></i></li>
+
+        </ul>
       </div>
     </div>
   );

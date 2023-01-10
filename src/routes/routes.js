@@ -5,7 +5,7 @@ import Category from '../pages/Category/Layout';
 
 import Contact from '../pages/Category/Categories/Contact/Contact';
 import Skills from '../pages/Category/Categories/Skills/Skills';
-import Works from '../pages/Category/Categories/Works/Works';
+import Projects from '../pages/Category/Categories/Projects/Projects';
 import About from '../pages/Category/Categories/About/About';
 
 export const routes = [
@@ -15,6 +15,6 @@ export const routes = [
 export const contents = [
   { path: '/About', component: About },
   { path: '/Skills', component: Skills },
-  { path: '/Works', component: Works },
+  { path: '/Projects', component: Projects },
   { path: '/Contact', component: Contact },
 ];

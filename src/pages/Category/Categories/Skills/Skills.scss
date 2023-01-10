@@ -1,11 +1,10 @@
 .skills_container {
   position: relative;
-  max-width: 70rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 5rem 0;
+  padding: 0 5%;
   margin: 0 auto;
 }
 .skill_container h1 {
@@ -20,9 +19,9 @@
   align-items: center;
   justify-content: center;
   gap: 3rem;
-  width: 50%;
-  min-width: 600px;
+  width: 100%;
   margin: 0 auto 3rem auto;
+
   .skill-box {
     width: 100%;
   }
@@ -33,7 +32,7 @@
   }
   .skill-box .skill-bar {
     height: 20px;
-    width: 100%;
+
     border-radius: 6px;
     margin-top: 6px;
     background: rgba(255, 255, 255, 0.5);
@@ -46,7 +45,7 @@
   .skill-box .skill-per {
     position: relative;
     height: 100%;
-    width: 100%;
+
     margin-left: 10px;
     width: 98%;
     border-radius: 6px;
@@ -54,7 +53,6 @@
     animation: progress 1.5s ease-in-out forwards;
     opacity: 100%;
   }
-
   .skill-per.front-end {
     width: 95%;
     animation-delay: 0.5s;
@@ -84,8 +82,26 @@
     z-index: 1;
   }
 }
-.skills__content-item {
-  max-width: 70rem;
+.programs {
+  list-style: none;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5%;
+
+  li {
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 3.2rem;
+  }
+  li:hover {
+    transform: scale(2);
+  }
 }
 
 @keyframes progress {

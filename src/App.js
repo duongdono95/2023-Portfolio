@@ -7,6 +7,9 @@ import Media from 'react-media';
 import NavMenu from './components/NavMenu/NavMenu';
 function App() {
   const [showMenuIcon, setShowMenuIcon] = useState(false);
+  const clickedItem = () => {
+    setShowMenuIcon(!showMenuIcon)
+  }
   return (
     <div className="App">
       <Router>
@@ -15,7 +18,7 @@ function App() {
             matches.large ? (
               <>
                 <div className="nav__menu__container small-screen">
-                  <NavMenu />
+                  <NavMenu handleClick={clickedItem} />
                 </div>
                 <div className="content__container padding">
                   <Routes>
@@ -24,6 +27,7 @@ function App() {
                       return <Route key={index} path={route.path} element={<Page />} />;
                     })}
                   </Routes>
+
                 </div>
               </>
             ) : (
@@ -34,15 +38,15 @@ function App() {
                   }}
                   className="menu__icon__container"
                 >
-                  <MenuIcon showMenuIcon={showMenuIcon} />
+                  <MenuIcon handleClick={clickedItem} showMenuIcon={showMenuIcon} />
                 </div>
                 {showMenuIcon ? (
                   <div className="nav__menu__container ">
-                    <NavMenu />
+                    <NavMenu handleClick={clickedItem} />
                   </div>
                 ) : (
                   <div className="nav__menu__container hide__nav">
-                    <NavMenu />
+                    <NavMenu handleClick={clickedItem} />
                   </div>
                 )}
                 <div className="content__container ">
