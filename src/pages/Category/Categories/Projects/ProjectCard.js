@@ -18,6 +18,15 @@ const ProjectCard = (props) => {
         <div className="flip__card-back">
           <p className="title">{title}</p>
           <p className="description">{description}</p>
+          <button>
+            <a href={github}>Git Hub Repository</a>
+          </button>
+          <button>
+            <a href={processDeck}>Process Deck</a>
+          </button>
+          <button>
+            <a href={site}>Visit The Site</a>
+          </button>
         </div>
       </div>
     </div>
