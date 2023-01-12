@@ -58,12 +58,12 @@ const Skills = () => {
           <p align="justify">Visit my GitHub profile for more details or contact me!!</p>
         </div>
         <ul className="programs">
-          <li><i class="fa-brands fa-html5"></i></li>
-          <li><i class="fa-brands fa-css3"></i></li>
-          <li><i class="fa-brands fa-react"></i></li>
-          <li><i class="fa-brands fa-vuejs"></i></li>
+          <li><i className="fa-brands fa-html5"></i></li>
+          <li><i className="fa-brands fa-css3"></i></li>
+          <li><i className="fa-brands fa-react"></i></li>
+          <li><i className="fa-brands fa-vuejs"></i></li>
           <li><p>TS</p></li>
-          <li><i class="fa-brands fa-figma"></i></li>
+          <li><i className="fa-brands fa-figma"></i></li>
 
         </ul>
       </div>
