@@ -96,8 +96,6 @@ const uiUxDesign = [
   },
 ];
 
-
-
 export const projects = [
   {
     path: '/WebDev', data: webDevelopment
