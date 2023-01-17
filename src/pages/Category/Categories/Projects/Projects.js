@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import ProjectCard from './ProjectCard/ProjectCard';
+import ProjectDetails from './ProjectDetails/ProjectDetails';
 import { projects } from '../../../../routes/routes';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './Projects.scss';
@@ -12,21 +12,21 @@ const Projects = () => {
         <strong>SOME</strong> OF MY PROJECTS
       </p>
       <div className="project__labels">
-        <div className="project__label">
-          <NavLink to="WebDev">Website Development</NavLink>
-        </div>
-        <div className="project__label">
-          <NavLink to="UiUx">Ui/Ux Design</NavLink>
-        </div>
+        <NavLink to="WebDev">
+          <div className="project__animated__bg"></div>
+          <div className="project__label">Website Development</div>
+        </NavLink>
+        <NavLink to="UiUx">
+          <div className="project__animated__bg"></div>
+          <div className="project__label">Ui/Ux Design</div>
+        </NavLink>
       </div>
-      <div className="project__section">
-        <Routes>
-          {projects.map((route, index) => {
-            const data = route.data;
-            return <Route key={index} path={route.path} element={<ProjectCard data={data} />} />;
-          })}
-        </Routes>
-      </div>
+      <Routes>
+        {projects.map((route, index) => {
+          const data = route.data;
+          return <Route key={index} path={route.path} element={<ProjectDetails data={data} />} />;
+        })}
+      </Routes>
     </div>
   );
 };

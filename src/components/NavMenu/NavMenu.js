@@ -21,7 +21,7 @@ const NavMenu = (props) => {
         <NavLink onClick={handleClick} to="Category/Skills">
           <li className="page__link">My Skills</li>
         </NavLink>
-        <NavLink onClick={handleClick} to="Category/Projects">
+        <NavLink onClick={handleClick} to="Category/Projects/WebDev">
           <li className="page__link">Projects</li>
         </NavLink>
         <NavLink onClick={handleClick} to="Category/Contact">
